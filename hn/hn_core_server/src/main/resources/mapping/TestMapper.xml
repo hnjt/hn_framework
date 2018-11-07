@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hn.hn_core_server.dao.TestDao" >
+
+    <select id="testGetList" resultType="java.util.Map">
+          SELECT id ,
+          tableName ,
+          note
+          FROM hn_list
+    </select>
+</mapper>
