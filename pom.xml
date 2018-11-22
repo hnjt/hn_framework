@@ -12,6 +12,7 @@
     <description>Demo project for Spring Boot</description>
 
     <modules>
+        <module>hn_security_sso</module>
         <module>hn_eureka</module>
         <module>hn_pojo</module>
         <module>hn_common</module>
