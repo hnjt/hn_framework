@@ -18,4 +18,5 @@ public class SecuritySsoApplication extends SpringBootServletInitializer {
 
     @Bean
     RestTemplate restTemplate(){ return new RestTemplate(); }
+
 }

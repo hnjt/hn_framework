@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>黑农登陆(templates)</title>
+
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap-theme.css}"/>
+    <!--JQ-->
+    <script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+    <!--bootstrap-->
+    <script th:src="@{/webjars/bootstrap/3.3.5/js/bootstrap.min.js}"></script>
+    <script th:src="@{/static/My97DatePicker/lang/zh-cn.js}"></script>
+
+</head>
+<body style="background-image: url(/static/img/index.jpg);margin: 0;padding: 0;">
+    <div style="width: 100%;text-align: left">
+        <label style="color: wheat;margin-left: 2%;" class="h1">黑农集团</label>
+    </div>
+    <form style="margin-top: 27%;">
+        <div style="margin-left: 41%">
+            <label>绑定手机号：</label><input/>
+        </div>
+        <div style="margin-left: 41%">
+            <label>手机验证码：</label><input style="width: 88px;"/><input th:type="button" th:value="发送验证码">
+        </div>
+        <div style="margin-top: 3px;padding-left: 7%;text-align: center">
+            <input th:type="button" th:class="btn-info" th:value="提交">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input th:type="button" th:class="btn-info" th:value="注册">
+        </div>
+    </form>
+</body>
+<!--JS嵌入文件-->
+<!--<script type="application/javascript" th:src="@{/static/js/index.js}"></script>-->
+</html>
